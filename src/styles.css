@@ -2370,3 +2370,16 @@ footer>span {
         transform: none
     }
 }
+
+.button.submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.form-error {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #c0392b;
+}
