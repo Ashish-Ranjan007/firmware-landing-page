@@ -394,6 +394,7 @@ function App() {
         } finally {
             setSending(false);
         }
+        console.log(data)
     };
 
     return (
@@ -555,6 +556,7 @@ function App() {
                                 <label>Firm / business name<input required name="firm" placeholder="e.g. Rao & Associates" /></label>
                                 <div className="form-row"><label>Your name<input required name="name" placeholder="Your name" /></label><label>Role<select required name="role" defaultValue=""><option value="" disabled>Select role</option><option>Partner / Owner</option><option>Manager</option><option>Staff</option><option>Other</option></select></label></div>
                                 <div className="form-row"><label>Phone / WhatsApp<input required name="phone" placeholder="+91 98765 43210" /></label><label>Firm size<select required name="size" defaultValue=""><option value="" disabled>Select size</option><option>1–5</option><option>6–15</option><option>16–30</option><option>31–50</option><option>50+</option></select></label></div>
+                                <label>Email ID<input required name="email" placeholder="e.g. your.email@example.com" type="email" /></label>
                                 <label>What's your biggest operational headache?<textarea name="pain" rows="3" placeholder="Documents, deadlines, staff coordination, client follow-ups..." /></label>
                                 <button
                                     className="button primary submit"
