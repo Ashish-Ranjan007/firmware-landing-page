@@ -2383,3 +2383,481 @@ footer>span {
     font-size: 13px;
     color: #c0392b;
 }
+
+/* =====================================================
+   Softer contrast + restrained accent theme
+   ===================================================== */
+
+:root {
+    --bg: #fafaf9;
+    --fg: #25272b;
+    --muted: #70747c;
+    --line: #dedfdf;
+    --soft: #f1f2f2;
+    --dark: #181b20;
+    --dark2: #20242a;
+
+    /* muted blue accent */
+    --accent: #5b6fd6;
+    --accent-soft: #eef0fb;
+    --accent-line: #cbd1f1;
+}
+
+/* Softer overall contrast */
+body {
+    background: var(--bg);
+    color: var(--fg);
+}
+
+.nav {
+    background: rgba(250, 250, 249, .92);
+}
+
+.nav-links {
+    color: #62666e;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.nav-cta {
+    border-color: #c8cbd0;
+    color: #34373d;
+}
+
+.nav-cta:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-soft);
+}
+
+.brand span,
+.mini-brand span {
+    color: var(--accent);
+}
+
+.eyebrow {
+    border-color: var(--accent-line);
+    background: var(--accent-soft);
+    color: #596174;
+}
+
+.pulse {
+    background: var(--accent);
+    box-shadow: 0 0 0 4px rgba(91, 111, 214, .12);
+}
+
+.hero h1 em {
+    color: var(--accent);
+}
+
+.hero-copy {
+    color: #5f636b;
+}
+
+.button {
+    border-color: #c8cbd0;
+    color: #363940;
+    background: #fafaf9;
+}
+
+.button.primary {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+}
+
+.button.primary:hover {
+    background: #5064c9;
+    box-shadow: 0 10px 24px rgba(91, 111, 214, .18);
+}
+
+.button.secondary:hover {
+    background: var(--accent-soft);
+    border-color: var(--accent-line);
+    color: var(--accent);
+}
+
+.trust-line b {
+    color: #60646b;
+}
+
+.dashboard-shell {
+    border-color: #d0d2d5;
+    box-shadow: 0 30px 80px rgba(30, 34, 40, .07);
+}
+
+.side-item.active {
+    background: var(--accent-soft);
+    color: var(--accent);
+}
+
+.bar i {
+    background: var(--accent);
+}
+
+.stats .danger strong {
+    color: #6d6670;
+}
+
+/* Keep dark product sections, but make them charcoal rather than near-black */
+.dark-section {
+    background: var(--dark);
+}
+
+.dark-section .section-label {
+    color: #8d929b;
+}
+
+.dark-section .split-heading p {
+    color: #aeb2b9;
+}
+
+.module-grid {
+    border-top-color: #30343a;
+}
+
+.module {
+    border-right-color: #30343a;
+}
+
+.icon {
+    border-color: #454a52;
+    color: #b8bdc6;
+}
+
+.module p {
+    color: #b0b4bc;
+}
+
+.module > svg:last-child {
+    color: #8d929b;
+}
+
+/* Accent the important interactive/product states */
+.ans {
+    color: var(--accent);
+}
+
+.ans svg {
+    color: var(--accent);
+}
+
+.section-label {
+    color: #858a92;
+}
+
+.split-heading h2 span {
+    color: var(--accent);
+}
+
+.problem > span {
+    color: #858a92;
+}
+
+.road.active b,
+.road.active > span {
+    color: var(--accent);
+}
+
+.register {
+    background: #f0f1f1;
+}
+
+.register p {
+    color: #666a72;
+}
+
+form {
+    border-color: #d0d2d5;
+    box-shadow: 0 12px 35px rgba(30, 34, 40, .045);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(91, 111, 214, .12);
+}
+
+.success-icon {
+    background: var(--accent);
+}
+
+.success {
+    border-color: #d0d2d5;
+}
+
+/* Dark explorer/dashboard states */
+.prog {
+    background: var(--accent);
+}
+
+.stage {
+    border-color: #30343a;
+    background: #1d2025;
+}
+
+.stage-bar {
+    border-bottom-color: #30343a;
+    background: #191c21;
+    color: #777d86;
+}
+
+.tab.active {
+    color: #f1f2f4;
+}
+
+.tab:focus-visible {
+    outline-color: var(--accent);
+}
+
+.pill.ok,
+.acc.full,
+.st-pill.ok {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+}
+
+.pill.warn {
+    border-color: #7f8590;
+    color: #d4d7dc;
+}
+
+.meter i {
+    background: var(--accent);
+}
+
+.wbar i {
+    background: #8d96b5;
+}
+
+.wrow.over .wbar i {
+    background: var(--accent);
+}
+
+.wrow.over small {
+    color: #dfe2e7;
+}
+
+.chip {
+    border-color: #444950;
+    color: #d0d4da;
+}
+
+.callout {
+    border-color: #3a3f46;
+    color: #c8ccd2;
+}
+
+.callout svg {
+    color: var(--accent);
+}
+
+.toast {
+    background: #20242a;
+    color: #f4f5f6;
+    box-shadow: 0 14px 40px rgba(20, 23, 28, .18);
+}
+
+.toast svg {
+    color: var(--accent);
+}
+
+.filed-results svg {
+    color: var(--accent);
+}
+
+.acc.part {
+    color: #d2d6dd;
+    border-color: #7f8590;
+}
+
+.acc.none {
+    color: #858a92;
+}
+
+:focus-visible {
+    outline-color: var(--accent);
+}
+
+/* Reduce the intensity of motion glow */
+@keyframes pulseRing {
+    0%, 100% {
+        box-shadow: 0 0 0 3px rgba(91, 111, 214, .12);
+    }
+    50% {
+        box-shadow: 0 0 0 7px rgba(91, 111, 214, .05);
+    }
+}
+
+@keyframes ping {
+    0% {
+        box-shadow: 0 0 0 0 rgba(91, 111, 214, .25);
+    }
+    70%, 100% {
+        box-shadow: 0 0 0 7px rgba(91, 111, 214, 0);
+    }
+}
+
+/* =====================================================
+   Paper theme + contrast reduction + restrained accent
+   (round 3 — addresses residual hard-black text/fills the
+   previous pass missed due to selector specificity, warms
+   the palette, and pulls accent back to a handful of
+   functional/status spots instead of decorative ones)
+   ===================================================== */
+
+:root {
+    --bg: #f6f1e7;
+    --fg: #34302a;
+    --muted: #837b6d;
+    --line: #e3dcce;
+    --soft: #efe8d9;
+    --dark: #211e19;
+    --dark2: #2a251f;
+}
+
+/* Paper grain: a grayscale fiber-noise tile plus a very faint tonal
+   vignette, under the warm page color. Cards/panels keep their own
+   explicit backgrounds, so the texture reads in the margins and between
+   sections — present, but not something you'd notice you're noticing.
+   Kept desaturated and low-opacity on purpose: this is an operations
+   tool, not a stationery mockup. */
+body {
+    background-color: var(--bg);
+    background-image:
+        radial-gradient(ellipse at 50% 0%, rgba(255, 253, 246, .55), rgba(255, 253, 246, 0) 60%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.07'/%3E%3C/svg%3E");
+    background-repeat: no-repeat, repeat;
+    background-size: 100% 900px, 200px 200px;
+    background-attachment: fixed, fixed;
+}
+
+.nav {
+    background: rgba(246, 241, 231, .92);
+}
+
+/* Big light "card" surfaces get a warm paper-white instead of stark #fff,
+   so they sit on the textured page without a hard edge. */
+.dashboard-shell,
+.success,
+form {
+    background: #fffdf6;
+}
+
+/* --- Fix residual hard-black text/fills the prior pass didn't reach --- */
+/* (these selectors match the ORIGINAL rule's specificity exactly, which
+   is why they were still rendering pure black despite the earlier
+   softer-theme block further up the file) */
+
+input,
+select,
+textarea {
+    color: var(--fg);
+    background: #fffdf6;
+}
+
+.status-dot.red {
+    background: var(--fg);
+}
+
+.filed {
+    background: var(--dark);
+}
+
+.tree .name {
+    background: var(--dark2);
+}
+
+.mini-list .st-pill.ok {
+    background: #fffdf6;
+    color: var(--dark);
+    border-color: #fffdf6;
+}
+
+.problem .ans,
+.problem .ans:hover {
+    color: var(--fg);
+    border-color: var(--fg);
+}
+
+/* --- Pull accent back to functional/status use only --- */
+/* Everything below reverts a decorative accent application from the
+   previous pass to a neutral tone. Accent is kept only on: the primary
+   CTA button, small "live/active" status dots, the active dashboard nav
+   item, one emphasized headline word, form focus states, the one-off
+   success icon and toast icon, the loading spinner, the scroll-progress
+   line, and the two "current step" markers in the roadmap. */
+
+.nav-links a:hover {
+    color: var(--fg);
+}
+
+.nav-cta:hover {
+    border-color: var(--fg);
+    color: var(--fg);
+    background: var(--soft);
+}
+
+.brand span,
+.mini-brand span {
+    color: var(--fg);
+}
+
+.eyebrow {
+    border-color: var(--line);
+    background: var(--soft);
+    color: var(--muted);
+}
+
+.dashboard .bar i {
+    background: var(--fg);
+}
+
+.split-heading h2 span {
+    color: var(--muted);
+}
+
+.pill.ok,
+.acc.full,
+.st-pill.ok {
+    background: #fff;
+    color: var(--dark);
+    border-color: #fff;
+}
+
+.meter i {
+    background: #fff;
+}
+
+.wbar i {
+    background: #a1a1aa;
+}
+
+.wrow.over .wbar i {
+    background: #fff;
+}
+
+.wrow.over small {
+    color: #fff;
+}
+
+.callout svg {
+    color: #a1a1aa;
+}
+
+.filed-results svg {
+    color: #a1a1aa;
+}
+
+/* --- Give the "current step" markers the accent, so it still means
+   something specific rather than decorating everything --- */
+
+.dep small.now {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+}
